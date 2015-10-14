@@ -1,0 +1,10 @@
+res/values-v14/styles.xml
+res/values-v11/styles.xml
+res/values/styles.xml
+gen/
+bin/
+.settings/
+project.properties
+proguard-project.txt
+lint.xml
+.classpath

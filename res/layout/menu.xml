@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#224665"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#113350" >
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="15"
+                android:maxLines="1" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:onClick="btn_search"
+                android:src="@drawable/btn_search" />
+
+            <ImageView
+                android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:onClick="btn_menu"
+                android:src="@drawable/btn_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_actual_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="#ffff00" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@drawable/divider"
+            android:dividerHeight="5dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="exitMenu"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/listMenu"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:background="#ffffff"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/load_RL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/div"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/load_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp" />
+
+        <TextView
+            android:id="@+id/load_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/load_pb"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffff00" />
+    </RelativeLayout>
+
+</RelativeLayout>

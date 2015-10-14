@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Где моя посылка?</string>
+    <string name="list_dobavleno">Добавлено:</string>
+    <string name="list_posl_obnovl">Последнее обновление:</string>
+    <string name="set_text">Настройки</string>
+    <string name="set_btn">Сохранить</string>
+    <string name="set_chb_autoload">Автоматическое отслеживание движения по трекам после выхода из программы</string>
+    <string name="set_chb_autoloadled">Звуковое уведомление при изменении статуса трек-кода</string>
+    <string name="set_chb_power">Не выключать экран</string>
+    <string name="track_name">Введите название трек-кода:\n(например \"Смартфон Lenovo P780\")</string>
+    <string name="track_code">Введите трек-код:\n(обычно 13 символов, например \"ru123456789ch\")</string>
+    <string name="spinner">Время (в мс.) на получение ответа от сервера (для каждого трек-кода).\nЕсли нестабильная связь - попробуйте большее значение.\n(5000 по умолчанию)</string>
+
+    <string-array name="server_time">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </string-array>
+
+</resources>
